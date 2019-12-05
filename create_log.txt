@@ -1,0 +1,633 @@
+{
+  "error": null,
+  "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Resources/deployments/deployment_dry_run",
+  "name": "deployment_dry_run",
+  "properties": {
+    "correlationId": "f1c92437-88c5-45dd-ba35-36f549a26146",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Web/serverfarms/WeatherBot123MF0Luis1488-WeatherBotMF",
+            "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF",
+            "resourceName": "WeatherBot123MF0Luis1488-WeatherBotMF",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Web/sites/WeatherBot123MF0Luis1488-WeatherBotMF",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF",
+        "resourceName": "WeatherBot123MF0Luis1488-WeatherBotMF",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Web/sites/WeatherBot123MF0Luis1488-WeatherBotMF",
+            "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF",
+            "resourceName": "WeatherBot123MF0Luis1488-WeatherBotMF",
+            "resourceType": "Microsoft.Web/sites"
+          }
+        ],
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.BotService/botServices/WeatherBot123MF0Luis1488",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF",
+        "resourceName": "WeatherBot123MF0Luis1488",
+        "resourceType": "Microsoft.BotService/botServices"
+      }
+    ],
+    "duration": "PT0S",
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputs": null,
+    "parameters": {
+      "appId": {
+        "type": "String",
+        "value": "8573f63b-22a0-4967-96fb-0581e896fe5c"
+      },
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "westus2"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      "appSecret": {
+        "type": "String",
+        "value": "oTlW|/h:jj7D&Vkq"
+      },
+      "appServicePlanLocation": {
+        "type": "String",
+        "value": "WestUS2"
+      },
+      "botId": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488"
+      },
+      "botSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      "existingAppServicePlan": {
+        "type": "String",
+        "value": ""
+      },
+      "location": {
+        "type": "String",
+        "value": "westus2"
+      },
+      "luisAuthoringKey": {
+        "type": "String",
+        "value": "48dfdb606ebe4ec29b25afbd8d4de60b"
+      },
+      "luisServiceAuthoringSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "luisServiceLocation": {
+        "type": "String",
+        "value": "westus2"
+      },
+      "luisServiceName": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488-WeatherBotMF-luis"
+      },
+      "luisServiceRunTimeSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "name": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      "newAppServicePlanName": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      "newAppServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "capacity": 1,
+          "family": "S",
+          "name": "S1",
+          "size": "S1",
+          "tier": "Standard"
+        }
+      },
+      "newWebAppName": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      "shouldCreateAuthoringResource": {
+        "type": "Bool",
+        "value": false
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus2"
+            ],
+            "properties": null,
+            "resourceType": "serverfarms"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus2"
+            ],
+            "properties": null,
+            "resourceType": "sites"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus2"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus2"
+            ],
+            "properties": null,
+            "resourceType": "components"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus2"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus2"
+            ],
+            "properties": null,
+            "resourceType": "accounts"
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "template": null,
+    "templateHash": "1828911997243188658",
+    "templateLink": null,
+    "timestamp": "2019-12-05T09:48:24.974498+00:00",
+    "validatedResources": [
+      {
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Web/serverfarms/WeatherBot123MF0Luis1488-WeatherBotMF",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      {
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Web/sites/WeatherBot123MF0Luis1488-WeatherBotMF",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      {
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.DocumentDB/databaseAccounts/weatherbot123mf0luis1488-weathe",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      {
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.BotService/botServices/WeatherBot123MF0Luis1488",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      {
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Insights/components/WeatherBot123MF0Luis1488-WeatherBotMF",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      {
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Storage/storageAccounts/weatherbot123mf0luis1488",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      {
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.CognitiveServices/accounts/WeatherBot123MF0Luis1488-WeatherBotMF-luis",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      }
+    ]
+  },
+  "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF",
+  "type": "Microsoft.Resources/deployments"
+}
+{
+  "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Resources/deployments/12052019114814",
+  "location": null,
+  "name": "12052019114814",
+  "properties": {
+    "correlationId": "726eb6e7-3d96-43fa-b764-da1054ad77b1",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Web/serverfarms/WeatherBot123MF0Luis1488-WeatherBotMF",
+            "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF",
+            "resourceName": "WeatherBot123MF0Luis1488-WeatherBotMF",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Web/sites/WeatherBot123MF0Luis1488-WeatherBotMF",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF",
+        "resourceName": "WeatherBot123MF0Luis1488-WeatherBotMF",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Web/sites/WeatherBot123MF0Luis1488-WeatherBotMF",
+            "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF",
+            "resourceName": "WeatherBot123MF0Luis1488-WeatherBotMF",
+            "resourceType": "Microsoft.Web/sites"
+          }
+        ],
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.BotService/botServices/WeatherBot123MF0Luis1488",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF",
+        "resourceName": "WeatherBot123MF0Luis1488",
+        "resourceType": "Microsoft.BotService/botServices"
+      }
+    ],
+    "duration": "PT3M58.8542016S",
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.BotService/botServices/WeatherBot123MF0Luis1488",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      {
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.CognitiveServices/accounts/WeatherBot123MF0Luis1488-WeatherBotMF-luis",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      {
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.DocumentDB/databaseAccounts/weatherbot123mf0luis1488-weathe",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      {
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Insights/components/WeatherBot123MF0Luis1488-WeatherBotMF",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      {
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Storage/storageAccounts/weatherbot123mf0luis1488",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      {
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Web/serverfarms/WeatherBot123MF0Luis1488-WeatherBotMF",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      {
+        "id": "/subscriptions/dd1a4fd1-8b3e-4db0-b9c6-505d013d2e4c/resourceGroups/WeatherBot123MF0Luis1488-WeatherBotMF/providers/Microsoft.Web/sites/WeatherBot123MF0Luis1488-WeatherBotMF",
+        "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      }
+    ],
+    "outputs": {
+      "applicationInsights": {
+        "type": "Object",
+        "value": {
+          "InstrumentationKey": "055a669a-4c7c-40ad-9591-eb69d7004fb6"
+        }
+      },
+      "blobStorage": {
+        "type": "Object",
+        "value": {
+          "connectionString": "DefaultEndpointsProtocol=https;AccountName=weatherbot123mf0luis1488;AccountKey=UD/AxtHh5+lxMeuP7q012T8VyRRjzh0fpYHTIiXR7Li7FNGzYD8uAS7qCsTVP+5ugFM3OAUF1uFfzckEljXz4w==;EndpointSuffix=core.windows.net",
+          "container": "transcripts"
+        }
+      },
+      "cosmosDb": {
+        "type": "Object",
+        "value": {
+          "authKey": "Xrrk3c0h32fsBq9sIXjIFjLw6JG4sS8hvjPqQGvRuVdq78H6Z7cqFe2G5klxECoRW79v8K9wU7KlyLuDTqiHFQ==",
+          "collectionId": "botstate-collection",
+          "cosmosDBEndpoint": "https://weatherbot123mf0luis1488-weathe.documents.azure.com:443/",
+          "databaseId": "botstate-db"
+        }
+      },
+      "luis": {
+        "type": "Object",
+        "value": {
+          "authoringKey": "48dfdb606ebe4ec29b25afbd8d4de60b",
+          "endpointKey": "5336d0bd28844a78b3c24f6f32745d83",
+          "region": "westus2"
+        }
+      }
+    },
+    "parameters": {
+      "appId": {
+        "type": "String",
+        "value": "8573f63b-22a0-4967-96fb-0581e896fe5c"
+      },
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "westus2"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      "appSecret": {
+        "type": "String",
+        "value": "oTlW|/h:jj7D&Vkq"
+      },
+      "appServicePlanLocation": {
+        "type": "String",
+        "value": "WestUS2"
+      },
+      "botId": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488"
+      },
+      "botSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      "existingAppServicePlan": {
+        "type": "String",
+        "value": ""
+      },
+      "location": {
+        "type": "String",
+        "value": "westus2"
+      },
+      "luisAuthoringKey": {
+        "type": "String",
+        "value": "48dfdb606ebe4ec29b25afbd8d4de60b"
+      },
+      "luisServiceAuthoringSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "luisServiceLocation": {
+        "type": "String",
+        "value": "westus2"
+      },
+      "luisServiceName": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488-WeatherBotMF-luis"
+      },
+      "luisServiceRunTimeSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "name": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      "newAppServicePlanName": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      "newAppServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "capacity": 1,
+          "family": "S",
+          "name": "S1",
+          "size": "S1",
+          "tier": "Standard"
+        }
+      },
+      "newWebAppName": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      "shouldCreateAuthoringResource": {
+        "type": "Bool",
+        "value": false
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "WeatherBot123MF0Luis1488-WeatherBotMF"
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus2"
+            ],
+            "properties": null,
+            "resourceType": "serverfarms"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus2"
+            ],
+            "properties": null,
+            "resourceType": "sites"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus2"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus2"
+            ],
+            "properties": null,
+            "resourceType": "components"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus2"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus2"
+            ],
+            "properties": null,
+            "resourceType": "accounts"
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "template": null,
+    "templateHash": "1828911997243188658",
+    "templateLink": null,
+    "timestamp": "2019-12-05T09:52:29.214326+00:00"
+  },
+  "resourceGroup": "WeatherBot123MF0Luis1488-WeatherBotMF",
+  "type": "Microsoft.Resources/deployments"
+}

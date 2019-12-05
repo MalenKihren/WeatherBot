@@ -1,0 +1,28 @@
+> See https://aka.ms/lu-file-format to learn about supported LU concepts.
+
+> Weather intent and its utterances
+
+# Weather
+- get weather
+- weather
+- how is the weather
+- forecast
+- conditions
+
+
+> Help intent and its utterances
+
+# Help
+- help
+- i need help
+- please help
+- can you please help
+
+> Cancel intent and its utterances
+
+# Cancel
+- cancel
+- please cancel that
+- stop that
+
+$PREBUILT:geographyV2

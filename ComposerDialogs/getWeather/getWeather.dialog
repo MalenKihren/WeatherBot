@@ -1,0 +1,122 @@
+{
+  "$type": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "name": "getWeather",
+    "id": "056261"
+  },
+  "autoEndDialog": "true",
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$type": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog"
+      },
+      "actions": [
+        {
+          "$type": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "805609",
+            "name": "Send a response"
+          },
+          "activity": "[bfdactivity-805609]"
+        },
+        {
+          "$type": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "912235",
+            "name": "Set a property"
+          },
+          "property": "user.city",
+          "value": "@geographyV2.location"
+        },
+        {
+          "$type": "Microsoft.TextInput",
+          "$designer": {
+            "id": "594333",
+            "name": "Text input"
+          },
+          "prompt": "[bfdprompt-594333]",
+          "unrecognizedPrompt": "[bfdunrecognizedPrompt-594333]",
+          "invalidPrompt": "[bfdinvalidPrompt-594333]",
+          "maxTurnCount": 3,
+          "property": "user.city",
+          "defaultValue": "kyiv",
+          "alwaysPrompt": false,
+          "allowInterruptions": "true",
+          "outputFormat": "trim"
+        },
+        {
+          "$type": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "650607",
+            "name": "Send a response"
+          },
+          "activity": "[bfdactivity-650607]"
+        },
+        {
+          "$type": "Microsoft.HttpRequest",
+          "$designer": {
+            "id": "255922",
+            "name": "Send an HTTP request"
+          },
+          "method": "GET",
+          "url": "https://api.weatherbit.io/v2.0/current?city={user.city}&key=3fd8ec40d8b2443786f2e872a106f299",
+          "resultProperty": "dialog.api_response",
+          "responseType": "Json"
+        },
+        {
+          "$type": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "310520",
+            "name": "Branch: if/else"
+          },
+          "condition": "dialog.api_response.statusCode == 200",
+          "actions": [
+            {
+              "$type": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "239811",
+                "name": "Set a property"
+              },
+              "property": "dialog.weather",
+              "value": "dialog.api_response.content"
+            },
+            {
+              "$type": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "641895",
+                "name": "Send a response"
+              },
+              "activity": "[bfdactivity-641895]"
+            }
+          ],
+          "elseActions": [
+            {
+              "$type": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "694659",
+                "name": "Send a response"
+              },
+              "activity": "[bfdactivity-694659]"
+            },
+            {
+              "$type": "Microsoft.DeleteProperty",
+              "$designer": {
+                "id": "135287",
+                "name": "Delete a property"
+              },
+              "property": "user.city"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "Microsoft.OnCustomEvent",
+      "$designer": {
+        "id": "123170"
+      }
+    }
+  ]
+}

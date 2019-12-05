@@ -1,0 +1,101 @@
+
+# bfdactivity-901714
+- Hi! i am weather bot. Say WEATHER mf
+
+# bfdactivity-805609
+- Let's check the weather
+
+
+# bfdactivity-466218
+-  u send me dich
+# bfdprompt-594333
+[Activity
+    Text = What is your city?
+    SuggestedActions = help | cancel
+]
+# bfdunrecognizedPrompt-594333
+- - Sorry, I do not understand '{this.value}'. Please specify a zipcode in the form 12345
+# bfdinvalidPrompt-594333
+- - Sorry, '{this.value}' is not valid. I'm looking for a 5 digit number as zipcode. Please specify a zipcode in the form 12345
+
+
+# bfdactivity-650607
+- ok, let's see how it looks in {user.city}
+
+
+
+
+# bfdactivity-694659
+- I got an error: {dialog.api_response.content.message}
+
+
+# bfdactivity-303311
+- I am a weather bot! I can tell you the current weather conditions. Just say WEATHER.
+
+
+# bfdactivity-245821
+- Canceling!
+
+
+# bfdactivity-641895
+[ThumbnailCard
+    title = Weather for @{dialog.weather.data[0].city_name}
+    text ={DescribeWeather(dialog.weather.data[0].weather.description)} and @{dialog.weather.data[0].temp}&deg;
+    image = @{dialog.weather.data[0].weather.icon}  
+]
+
+# DescribeWeather(weather)
+- IF: {dialog.weather.data[0].weather.description=="Clouds"}
+    - It is cloudy
+- ELSEIF: {dialog.weather.data[0].weather.description=="Thunderstorm"}
+    - There's a thunderstorm
+- ELSEIF: {dialog.weather.data[0].weather.description=="Drizzle"}
+    - It is drizzling
+- ELSEIF: {dialog.weather.data[0].weather.description=="Rain"}
+    - It is raining
+- ELSEIF: {dialog.weather.data[0].weather.description=="Snow"}
+    - There's snow
+- ELSEIF: {dialog.weather.data[0].weather.description=="Clear"}
+    - The skies are clear
+- ELSEIF: {dialog.weather.data[0].weather.description=="Mist"}
+    - There's a mist in the air
+- ELSEIF: {dialog.weather.data[0].weather.description=="Smoke"}
+    - There's smoke in the air
+- ELSEIF: {dialog.weather.data[0].weather.description=="Haze"}
+    - There's a haze
+- ELSEIF: {dialog.weather.data[0].weather.description=="Dust"}
+    - There's a dust in the air
+- ELSEIF: {dialog.weather.data[0].weather.description=="Fog"}
+    - It's foggy
+- ELSEIF: {dialog.weather.data[0].weather.description=="Ash"}
+    - There's ash in the air
+- ELSEIF: {dialog.weather.data[0].weather.description=="Squall"}
+    - There's a squall
+- ELSEIF: {dialog.weather.data[0].weather.description=="Tornado"}
+    - There's a tornado happening
+- ELSE:
+    - {dialog.weather.data[0].weather.description}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
